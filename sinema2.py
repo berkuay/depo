@@ -1,10 +1,11 @@
-film = {}
+movie = {}
 while True:
-    film_ismi=input("film ismi giriniz")
-    if film_ismi=="q":
+    movie_name=input("enter name of a movie ")
+    if movie_name=="q":
         break
     else:
-        imdb_puani= float(input("imdb puanı giriniz"))
-        film[film_ismi] = imdb_puani
-for name, score in film.items():
-    print(f"{name} filminin puani {score}")
+        imdb_rate = float(input("enter rate "))
+        movie[movie_name] = imdb_rate
+for name, score in movie.items():
+    print(f"{name} movie has {score} rate ")
+    """berkay"""
